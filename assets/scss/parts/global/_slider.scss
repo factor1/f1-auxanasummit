@@ -1,0 +1,54 @@
+/*
+ * Slider (Global)
+ *
+ * Template part used on various templates/views
+ */
+
+.slider-section {
+  @include iPhoneX;
+
+  .container {
+    padding: rem(60) 0;
+  }
+
+  .col-12 {
+    margin-bottom: rem(50);
+  }
+
+  .slick-slide {
+    margin-bottom: rem(50);
+
+    > div {
+      height: 100%;
+    }
+  }
+
+  &__slide {
+    display: block !important;
+    width: calc(100% - 40px) !important;
+    height: 100%;
+    margin: 0 auto;
+    padding: rem(30);
+    border-radius: rem(5);
+    // background-color: $white;
+    // box-shadow: 0 0 rem(20) rgba($lightestGray, 0.3);
+    
+    .slider__img {
+	    border-radius: 50%;
+	    width: 250px;
+	    height: 250px;
+	    display: block;
+	    margin: 0 auto 20px;
+	    border: 3px solid $aqua-dark;
+    }
+    
+  }
+
+  .button {
+    margin-top: rem(30);
+  }
+  
+  .slick-prev {left: -5%;}
+  .slick-next {right: -5%;}
+
+}

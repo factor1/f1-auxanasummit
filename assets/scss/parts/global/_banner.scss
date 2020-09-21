@@ -1,0 +1,17 @@
+/*
+ * Banner (Global)
+ *
+ * Template part used on various templates/views
+ */
+
+.banner {
+  @include iPhoneX;
+
+  .button {
+    margin-top: rem(30);
+  }
+  
+  h2 {
+	  color: #fff;
+	  font-size: 2rem}
+}

@@ -1,0 +1,56 @@
+/*------------------------------------------------------------------------------
+  Buttons
+------------------------------------------------------------------------------*/
+.button {
+  &--primary {
+    // @include buttons($primary, $primary, $white, $primary, transparent, $primary);
+    background: $aqua;
+     border: 2px solid $aqua;
+    color:  $white;
+    font-weight: bold;
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    &:hover {
+	    background: $aqua-med;
+	    transition: ease 0.2s;
+    }
+  }
+
+  &--primary-ghost {
+    //@include buttons($primary, transparent, $primary, $primary, $primary, $white);
+    background: transparent;
+    border: 2px solid $aqua;
+    color: $aqua;
+  }
+
+  &--secondary {
+    // @include buttons($secondary, $secondary, $white, $secondary, transparent, $secondary);
+    background: $aqua-light;
+    color: $aqua;
+  }
+
+  &--secondary-ghost {
+    // @include buttons($secondary, transparent, $secondary, $secondary, $secondary, $white);
+    background: transparent;
+    border: 2px solid $aqua-light;
+    color: $aqua;
+  }
+
+  &--white {
+    // @include buttons($white, $white, $primary, $white, transparent, $white);
+    background: $white;
+    border: 2px solid $aqua;
+    color: $aqua;
+  }
+
+  &--white-ghost {
+    // @include buttons($white, transparent, $white, $white, $white, $primary);
+    background: transparent;
+    border: 2px solid $white;
+    color: $white;
+  }
+}
