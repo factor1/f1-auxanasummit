@@ -2,7 +2,6 @@
   Menu Icon
 ------------------------------------------------------------------------------*/
 .menu-icon {
-  display: none;
   padding: rem(20) rem(10);
   background: transparent;
   -webkit-appearance: none;
@@ -34,7 +33,7 @@
     display: block;
     width: rem(30);
     height: rem(3);
-    // background-color: $white;
+    background-color: $white;
     transform-origin: -4% center;
     transition: all .4s ease;
   }
